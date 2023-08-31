@@ -3,7 +3,7 @@ import { data } from './data';
 import './App.css';
 
 function Description(){
-    const [courses, setCourses] = useState(data);
+    const [courses] = useState(data);
     const [showMore, setShowMore] = useState (false);
 
     const showMoreClick = (element) => {
@@ -13,7 +13,7 @@ function Description(){
       
     return(<div>
 {courses.map((element => {
-    const {id, course, image, description, showMore} = element;
+    const {id, description, showMore} = element;
     return(<div key={id}>
         <div className='container one two'>
         <div className='container one two'>

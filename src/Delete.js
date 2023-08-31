@@ -8,7 +8,7 @@ function Delete(){
 
     return(<div>
         {courses.map((element => {
-            const {id, course, image, description, showMore} = element;
+            const {id} = element;
             return(<div key={id}>
                 <div className='container'>
        <button className='word' onClick={() => setCourses([]) }>DELETE ALL</button>
