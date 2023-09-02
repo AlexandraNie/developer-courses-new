@@ -9,7 +9,7 @@ function Buttons(){
         let newCourses = courses.filter (course => course.id !==id);
         setCourses(newCourses);
         } 
-      
+    
     return(<div>
 {courses.map((element => {
     const {id} = element;
